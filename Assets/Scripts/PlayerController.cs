@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerDeath() // called by string reference in OnCollisionHandler.cs
     {
+        print("Death");
         isControlEnabled = false;
     }
 }

@@ -504,6 +504,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1405525394}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &1407181331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 215955450739814213, guid: 4e1950a564779e0408ca90b8173dbc68,
@@ -522,6 +523,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc422f9adcc1e844b82683aea39c8af9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> main
 --- !u!1 &1680917318
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,10 +719,13 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1407181334, guid: 4e1950a564779e0408ca90b8173dbc68, type: 3}
       propertyPath: controlPitchFactor
       value: 25
       objectReference: {fileID: 0}
+=======
+>>>>>>> main
     - target: {fileID: 212375251349089843, guid: 4e1950a564779e0408ca90b8173dbc68,
         type: 3}
       propertyPath: m_RootOrder
