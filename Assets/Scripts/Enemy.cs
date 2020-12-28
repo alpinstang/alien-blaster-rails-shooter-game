@@ -6,10 +6,15 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject deathFX;
+    [SerializeField] int scorePerHit = 225;
+    {SerializeField] int healthPoints = 100;
+
+    ScoreBoard scoreBoard;
 
     // Start is called before the first frame update
     void Start()
     {
+        scoreBoard = FindObjectOfType<ScoreBoard>();
         AddNonTriggerBoxCollider();
     }
 
@@ -21,7 +26,22 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        print("ship hit");
+        ProcessHit();
+    }
+
+    private void ProcessHit()
+    {
+        healthPoints -= 50;
+        scoreBoard.ScoreHit(scorePerHit);
+
+        if (healthPoints <= 0)
+        {
+            KillEnemy();
+        }
+    }
+
+    private void KillEnemy()
+    {
         Instantiate(deathFX, transform.position, Quaternion.identity);
         deathFX.SetActive(true);
         Destroy(gameObject);
