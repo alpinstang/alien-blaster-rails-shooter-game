@@ -16,6 +16,11 @@ public class CollisionHandler : MonoBehaviour
         Invoke("ReloadScene", 5f);
     }
 
+    private void ReloadScene()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     private void StartDeathSequence()
     {
         SendMessage("OnPlayerDeath");

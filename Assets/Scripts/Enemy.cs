@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        print("ship hit");
+        Instantiate(deathFX, transform.position, Quaternion.identity);
         deathFX.SetActive(true);
         Destroy(gameObject);
     }

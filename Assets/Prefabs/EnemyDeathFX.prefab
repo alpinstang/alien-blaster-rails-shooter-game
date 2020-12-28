@@ -12,15 +12,14 @@ GameObject:
   - component: {fileID: 154496852067714195}
   - component: {fileID: 7301222707994381679}
   - component: {fileID: 6938624772550593487}
-  - component: {fileID: 8417752818023574632}
-  - component: {fileID: 6910452141936657250}
+  - component: {fileID: 3993965449301405028}
   m_Layer: 0
   m_Name: EnemyDeathFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1956038287031071220
 Transform:
   m_ObjectHideFlags: 0
@@ -4853,7 +4852,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8417752818023574632
+--- !u!114 &3993965449301405028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4862,31 +4861,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3882230539370305367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580b75de06c4f8242897941f8c11dfe0, type: 3}
+  m_Script: {fileID: 11500000, guid: 26e0accac76edb24f8e1a0a3e02d44e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xControlSpeed: 12
-  xRange: 5
-  yControlSpeed: 12
-  yMin: -5
-  yMax: 5
-  positionPitchFactor: -2
-  positionYawFactor: 2
-  controlPitchFactor: -25
-  controlRollFactor: -20
-  xThrow: 0
-  yThrow: 0
---- !u!114 &6910452141936657250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3882230539370305367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc422f9adcc1e844b82683aea39c8af9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLoadDelay: 1
-  deathFX: {fileID: 3882230539370305367}
