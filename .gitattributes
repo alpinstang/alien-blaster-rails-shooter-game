@@ -2,3 +2,4 @@
 *.terrainlayer linguist-detectable=false
 *.meta linguist-detectable=false
 *.mat linguist-detectable=false
+*.cginc linguist-detectable=false
